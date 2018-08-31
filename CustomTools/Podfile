@@ -1,0 +1,28 @@
+platform :ios, ‘8.0’
+
+target 'CustomTools' do
+	
+	pod 'AFNetworking', '~> 3.0'
+        pod 'MJRefresh'
+        pod 'SDWebImage', '~> 4.0'
+        pod 'IQKeyboardManager' #iOS8 and later
+        pod 'Masonry'
+        pod 'Toast'
+	pod 'MBProgressHUD', '~> 1.1.0'
+        pod 'GVUserDefaults'  #对 NSUserDefaults 进行了封装, 方便的进行本地化存>储操作
+        pod 'YYModel'
+
+
+                 # Pods for testing
+                        target 'CustomToolsTests' do  # CustomToolsTests 目录下的引用 
+                        inherit! :search_paths
+                        end
+                # Pods for testing
+                        target 'CustomToolsUITests' do # CustomToolsUITests 目录下的引用 
+                        inherit! :search_paths
+                end
+
+
+
+end
+
