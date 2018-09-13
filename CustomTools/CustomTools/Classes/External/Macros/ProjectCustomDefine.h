@@ -27,7 +27,7 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 //头高度,iPhone X：88，iPhone 8：64
-#define Nav_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height + 44
+#define Nav_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height + 44)
 #define Nav_StatusBar_H [[UIApplication sharedApplication] statusBarFrame].size.height
 // 适配iPhone x 底栏高度  (iphoneX高了34)
 #define Tabbar_HEIGHT  ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
@@ -35,7 +35,8 @@
 #define RYAdaptScreenSizeH(ui_w,ui_h) ((ui_h)/(ui_w)*[UIScreen mainScreen].bounds.size.width)
 //适应屏幕的宽
 #define RYAdaptScreenSizeW(ui_w,ui_h) ((ui_h)/(ui_w)*[UIScreen mainScreen].bounds.size.height)
-
+///适应屏幕的宽
+#define RYRealAdaptWidthValue(ui_w) ((ui_w)/375.0f*[UIScreen mainScreen].bounds.size.width)    //6S:375pt    6P:414.0f
 
 
 #pragma mark- GVUserDefaults

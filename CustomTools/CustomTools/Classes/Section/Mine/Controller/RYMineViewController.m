@@ -7,6 +7,7 @@
 //
 
 #import "RYMineViewController.h"
+#import "RYSettingViewController.h"
 
 @interface RYMineViewController ()
 
@@ -17,21 +18,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    [self initBaseUIAndBaseData];
+    
+    
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark- initBaseUI & initBaseData
+-(void)initBaseUIAndBaseData{
+    [self initBaseData];
+    [self initBaseUI];
+    
+}
+-(void)initBaseData{
+    
+    
+}
+-(void)initBaseUI{
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:@"下一页" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(100, 100, 50, 50);
+    [btn addTarget:self action:@selector(clickedNextBtnHandle) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+ 
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)clickedNextBtnHandle{
+    RYSettingViewController *setVC = [RYSettingViewController new];
+    setVC.nameStr  = @"lanni";
+    setVC.age = 20;
+    [self.navigationController pushViewController:setVC animated:YES];
 }
-*/
 
 @end

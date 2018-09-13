@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12642A471825208ED8074894 /* libPods-CustomToolsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 029BB083740CCCAD1F42E384 /* libPods-CustomToolsUITests.a */; };
 		15C28741C817573C389C1ACE /* libPods-CustomTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634D78423033DC44E9D90020 /* libPods-CustomTools.a */; };
+		6127023C214A58BC002D31E7 /* GlobalDefineDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6127023B214A58BC002D31E7 /* GlobalDefineDataBase.m */; };
+		612AB06E2140BDB10014FAEE /* RYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612AB06D2140BDB10014FAEE /* RYSettingViewController.m */; };
 		613C0784212FC7DF00CDAC97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613C077D212FC7DF00CDAC97 /* AppDelegate.m */; };
 		613C0787212FC8BE00CDAC97 /* ToastShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 613C0785212FC8BD00CDAC97 /* ToastShowView.m */; };
 		613C079E2130074300CDAC97 /* RYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613C079D2130074300CDAC97 /* RYNavigationController.m */; };
@@ -53,6 +55,10 @@
 /* Begin PBXFileReference section */
 		029BB083740CCCAD1F42E384 /* libPods-CustomToolsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomToolsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A292390E5610AE90E0E450F /* Pods-CustomTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomTools/Pods-CustomTools.release.xcconfig"; sourceTree = "<group>"; };
+		6127023A214A58BC002D31E7 /* GlobalDefineDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefineDataBase.h; sourceTree = "<group>"; };
+		6127023B214A58BC002D31E7 /* GlobalDefineDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalDefineDataBase.m; sourceTree = "<group>"; };
+		612AB06C2140BDB10014FAEE /* RYSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYSettingViewController.h; sourceTree = "<group>"; };
+		612AB06D2140BDB10014FAEE /* RYSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYSettingViewController.m; sourceTree = "<group>"; };
 		613C0779212FC7DF00CDAC97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		613C077D212FC7DF00CDAC97 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		613C0785212FC8BD00CDAC97 /* ToastShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastShowView.m; sourceTree = "<group>"; };
@@ -286,6 +292,8 @@
 			children = (
 				613C07AE213009CE00CDAC97 /* RYMineViewController.h */,
 				613C07AF213009CE00CDAC97 /* RYMineViewController.m */,
+				612AB06C2140BDB10014FAEE /* RYSettingViewController.h */,
+				612AB06D2140BDB10014FAEE /* RYSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -409,6 +417,8 @@
 		613C0770212FC7DF00CDAC97 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				6127023A214A58BC002D31E7 /* GlobalDefineDataBase.h */,
+				6127023B214A58BC002D31E7 /* GlobalDefineDataBase.m */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -876,12 +886,14 @@
 				613C0784212FC7DF00CDAC97 /* AppDelegate.m in Sources */,
 				613C07C321300B3700CDAC97 /* UITabBar+RedBadgeExt.m in Sources */,
 				613C07A32130078900CDAC97 /* GVUserDefaults+Properties.m in Sources */,
+				612AB06E2140BDB10014FAEE /* RYSettingViewController.m in Sources */,
 				613C0787212FC8BE00CDAC97 /* ToastShowView.m in Sources */,
 				613C07B0213009CE00CDAC97 /* RYMineViewController.m in Sources */,
 				613C07A42130078900CDAC97 /* UIColor+RYExpand.m in Sources */,
 				613C07C121300B3700CDAC97 /* UIImage+Color.m in Sources */,
 				613C07AD213009A600CDAC97 /* RYHomeViewController.m in Sources */,
 				613C07A7213008F900CDAC97 /* MainTabBarViewController.m in Sources */,
+				6127023C214A58BC002D31E7 /* GlobalDefineDataBase.m in Sources */,
 				61492ACC212C3827006FCC14 /* ViewController.m in Sources */,
 				61492AD7212C3829006FCC14 /* main.m in Sources */,
 				613C07C221300B3700CDAC97 /* UIView+RYFrame.m in Sources */,
