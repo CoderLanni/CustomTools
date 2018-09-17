@@ -17,6 +17,7 @@
 		6127024F214A5B0A002D31E7 /* UITextView+RYPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 61270248214A5B09002D31E7 /* UITextView+RYPlaceHolder.m */; };
 		61270250214A5B0A002D31E7 /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6127024A214A5B09002D31E7 /* NSTimer+addition.m */; };
 		61270251214A5B0A002D31E7 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 6127024B214A5B0A002D31E7 /* NSString+Emoji.m */; };
+		61270254214FB92A002D31E7 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61270253214FB92A002D31E7 /* BaseModel.m */; };
 		612AB06E2140BDB10014FAEE /* RYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612AB06D2140BDB10014FAEE /* RYSettingViewController.m */; };
 		613C0784212FC7DF00CDAC97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613C077D212FC7DF00CDAC97 /* AppDelegate.m */; };
 		613C0787212FC8BE00CDAC97 /* ToastShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 613C0785212FC8BD00CDAC97 /* ToastShowView.m */; };
@@ -78,6 +79,8 @@
 		61270249214A5B09002D31E7 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
 		6127024A214A5B09002D31E7 /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
 		6127024B214A5B0A002D31E7 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		61270252214FB92A002D31E7 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		61270253214FB92A002D31E7 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		612AB06C2140BDB10014FAEE /* RYSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYSettingViewController.h; sourceTree = "<group>"; };
 		612AB06D2140BDB10014FAEE /* RYSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYSettingViewController.m; sourceTree = "<group>"; };
 		613C0779212FC7DF00CDAC97 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -578,6 +581,8 @@
 		613C0780212FC7DF00CDAC97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				61270252214FB92A002D31E7 /* BaseModel.h */,
+				61270253214FB92A002D31E7 /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -934,6 +939,7 @@
 				61492ACC212C3827006FCC14 /* ViewController.m in Sources */,
 				6127024D214A5B0A002D31E7 /* UIButton+ImageTitleStyle.m in Sources */,
 				6127024E214A5B0A002D31E7 /* UIView+Expand.m in Sources */,
+				61270254214FB92A002D31E7 /* BaseModel.m in Sources */,
 				61270251214A5B0A002D31E7 /* NSString+Emoji.m in Sources */,
 				61492AD7212C3829006FCC14 /* main.m in Sources */,
 				6127023F214A5A9F002D31E7 /* RYWebProgressLayer.m in Sources */,
